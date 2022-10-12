@@ -8,13 +8,10 @@ Para visualizar meus pedidos
 Contexto:
 Dado que eu acesse a página de autenticação do e-commerce da EBAC SHOP
 
-Cenário: Ao inserir dados válidos deve ser direcionado para a tela de checkout
-Quando eu digitar o usuário "humberto@ebacshop.com.br"
-E a senha "ABC123"
-Então deve exibir uma mensagem de boas vindas "Olá, HUmberto!"
+Cenário: Login com dados válidos
+Quando eu inserir um usuário ou senha válidos 
+Então deve exibir uma mensagem de boas vindas "Olá, usuário!"
 
-Cenário: Ao inserir um dos campos inválidos deve exibir uma mensagem de alerta “Usuário ou senha inválidos”
-Quando eu digitar o usuário "humberto@ebacshop.com.br"
-E a senha "abc123"
+Cenário: Login com dados inválidos
+Quando eu inserir um usuário ou senha inválidos 
 Então deve exibir uma mensagem de alerta: "Usuário ou senha inválidos"
-
