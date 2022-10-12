@@ -9,16 +9,14 @@ Para depois inserir no carrinho
 Contexto:
 Dado que eu acesse a página do e-commerce da EBAC SHOP
 
-Cenário: Seleções de cor, tamanho e quantidade devem ser obrigatórios
-Quando eu selecionar "vermelho"
-E selecionar um "G"
-E selecionar "2"
+Cenário: Seleção de atributos do produto
+Quando eu selecionar "vermelho", "G", "2"
 Então deve exibir uma mensagem de sucesso: "Ok! Vamos para o carrinho"
 
-Cenário: Deve permitir apenas 10 produtos por venda
+Cenário: Limite de quantidade de produtos
 Quando eu selecionar "10" produtos
 Então deve exibir uma mensagem de sucesso: "Ok! Vamos para o carrinho"
 
-Cenário: Quando eu clicar no botão “limpar” deve voltar ao estado original
+Cenário: Clicar no botão limpar
 Quando eu clicar no botão "limpar"
 Então deve exibir uma mensagem de sucesso: "Opções desfeitas! Favor escolher novamente!"
